@@ -1,0 +1,27 @@
+# Entornos virtuales de Python
+venv/
+.venv/
+env/
+ENV/
+
+# Modelos GGUF e IA (Demasiado pesados para GitHub)
+models/
+*.gguf
+
+# Caché y archivos temporales de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Configuración local de IDEs
+.vscode/
+.idea/
+
+# Archivos de entorno y variables secretas
+.env
+.venv
+
+# Logs y Docker
+*.log
+.dockerignore

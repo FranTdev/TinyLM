@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  tinylm-api:
+    build: .
+    container_name: tinylm
+    ports:
+      - "8000:8000"
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+    restart: unless-stopped
+    environment:
+      - MODEL_PATH=/app/models/qwen2.5-1.5b-instruct-q4_k_m.gguf
